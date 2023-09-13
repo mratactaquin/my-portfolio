@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <title>My Resume</title>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #323232;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1b1b1b;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #fc6e20;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+text-align: center;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ffe7d0;
+  width: 100%;
+  padding: 10px;
+
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rcorners1 {
+  border-radius: 25px;
+  background: #fc6320;
+  padding: 10px; 
+  width: auto;
+  height: auto;  
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1b1b1b;
+  margin-top: 20px;
+  color: #ffe7d0;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Meri Rose Abigayle A. Tactaquin</h1>
+  <p>BSCS 3C - CC106</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Back to Home</a>
+  <a href="https://flexboxfroggy.com/">Game Corner</a>
+ <!-- <a href="https://www.facebook.com/mra.tactaquin/" style="float:right">Social Media</a> -->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 class="rcorners1">ANIME</h2>
+      <h5>One Piece</h5>
+      <div class="fakeimg"><img src="onepiece.jpe" alt="zhask" width=100% height=60%></div>
+      <p>My old-time favorite anime since 2015.</p>
+    </div>
+    <div class="card">
+      <h2 class="rcorners1">KDRAMA</h2>
+      <h5>Uncanny Encounter</h5>
+      <div class="fakeimg"><img src="uncanny.webp" alt="zhask" width=100% height=60%></div>
+      <p>My new favorite due to its unique story line.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 class="rcorners1">SUPER MECHA CHAMPIONS</h2>
+      <div class="fakeimg" >      <div class="fakeimg">  <img src="smc.webp" alt="zhask" width=100%></div></div>
+      <p>Super Mecha Champions is an action shooter featuring mecha combats and pilot battle royale.</p>
+    </div>
+    <div class="card">
+      <h2 class="rcorners1">MOBILE LEGENDS</h2>
+      <div class="fakeimg">  <img src="zhask.jpg" alt="zhask" width=100%></div>
+      <div class="fakeimg">  <img src="vale.jpg" alt="zhask" width=100%></div>
+      <div class="fakeimg">  <img src="guin.jpg" alt="zhask" width=100%></div>
+    </div>
+    <div class="card">
+      <h3>Like or Follow Me!</h3>
+  <a href="https://www.linkedin.com/in/meri-rose-abigayle-tactaquin-700bb0289?authuser=0">
+<i class="bx bxl-linkedin bx-md bx-tada"></i>
+</a>
+  <a href="https://github.com/mratactaquin?authuser=0">
+<i class="bx bxl-github bx-md bx-tada" ></i>
+</a>
+  <a href="https://www.facebook.com/mra.tactaquin/">
+<i class="bx bxl-facebook bx-md bx-tada" ></i>
+</a>
+  <a href="https://www.tiktok.com/@amero6466">
+<i class="bx bxl-tiktok bx-md bx-tada" ></i>
+</a>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy;
+2023, Designed and coded by AMERO.
+                </div>
+            </div>
+</div>
+
+</body>
+</html>
+
+
