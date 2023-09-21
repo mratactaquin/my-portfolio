@@ -1,104 +1,285 @@
-<style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
+h1 {
+  color: white;
+font-family: 'Ysabeau SC', sans-serif;
+  font-size: 65px;
+  text-transform: uppercase;
   width: 100%;
-  padding: 20px;
+}
+.welcome {
+  color: white;
+font-family: 'Ysabeau SC', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+p {
+  color: white;
+font-family: 'Ysabeau SC', sans-serif;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+
+div {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 50%;
+  padding-top: 5%;
+  padding-right: 35%;
+    padding-bottom: 7%;
+  padding-left: 5%;
+    border: 1px solid white;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
+h6{
+  color: white;
+font-family: 'Ysabeau SC', sans-serif;
+text-align: center;
+  width: 100%;
+}
+
+.button1 {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
   text-align: center;
-  background: #ddd;
-  margin-top: 20px;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: dimgray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
+.button1:hover {background-color: darkmagenta;}
+
+.button1:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: dimgray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button2:hover {background-color: darkgreen;}
+
+.button2:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.button3 {
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: dimgray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button3:hover {background-color: darkblue;}
+
+.button3:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.button4 {
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: dimgray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button4:hover {background-color: darkorange;}
+
+.button4:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
     padding: 0;
+    background: #100f0f;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+.background li:nth-child(0) {
+    left: 46%;
+    width: 125px;
+    height: 125px;
+    bottom: -125px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 1%;
+    width: 166px;
+    height: 166px;
+    bottom: -166px;
+    animation-delay: 3s;
+}
+.background li:nth-child(2) {
+    left: 21%;
+    width: 196px;
+    height: 196px;
+    bottom: -196px;
+    animation-delay: 8s;
+}
+.background li:nth-child(3) {
+    left: 41%;
+    width: 193px;
+    height: 193px;
+    bottom: -193px;
+    animation-delay: 12s;
+}
+.background li:nth-child(4) {
+    left: 56%;
+    width: 187px;
+    height: 187px;
+    bottom: -187px;
+    animation-delay: 2s;
+}
+.background li:nth-child(5) {
+    left: 13%;
+    width: 177px;
+    height: 177px;
+    bottom: -177px;
+    animation-delay: 5s;
+}
+.background li:nth-child(6) {
+    left: 49%;
+    width: 167px;
+    height: 167px;
+    bottom: -167px;
+    animation-delay: 11s;
+}
+.background li:nth-child(7) {
+    left: 48%;
+    width: 198px;
+    height: 198px;
+    bottom: -198px;
+    animation-delay: 35s;
+}
+.background li:nth-child(8) {
+    left: 86%;
+    width: 153px;
+    height: 153px;
+    bottom: -153px;
+    animation-delay: 8s;
+}
+.background li:nth-child(9) {
+    left: 33%;
+    width: 166px;
+    height: 166px;
+    bottom: -166px;
+    animation-delay: 2s;
+}
+
+@media screen and (max-width: 800px) {
+  .button1{   
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .button2{   
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .button3{   
+  position: absolute;
+  top: 55%;
+  left: 60%;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+@media screen and (max-width: 800px) {
+  .button4{   
+  position: absolute;
+  top: 70%;
+  left: 60%;
   }
 }
-</style>
+

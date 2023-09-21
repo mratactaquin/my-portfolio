@@ -1,259 +1,64 @@
+<!-- TACTAQUIN, MERI ROSE ABIGAYLE A.             BSCS 3C-->
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-  <title>My Resume</title>
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: #323232;
-  color: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #1b1b1b;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #fc6e20;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-text-align: center;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #ffe7d0;
-  width: 100%;
-  padding: 20px;
-
-}
-
-
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.rcorners1 {
-  border-radius: 25px;
-  background: #fc6320;
-  padding: 10px; 
-  width: auto;
-  height: auto;  
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #1b1b1b;
-  margin-top: 20px;
-  color: #ffe7d0;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-</head>
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville&family=Lobster&family=Satisfy&family=Ysabeau+SC:wght@1;500&display=swap" rel="stylesheet">
 <body>
 
-<div class="header">
-  <h1>Meri Rose Abigayle A. Tactaquin</h1>
-  <p>BSCS 3C - CC106</p>
+
+  <ul class="background">
+
+<div>
+    <h1 class="welcome">Hello, I'm</h1>
+    <h1>MERI ROSE ABIGAYLE A. TACTAQUIN</h1>
+<p>Welcome to my Portfolio Website</p>
+
+<a href="about.html">
+<button class="button1">About Me</button>
+</a>
+
+<a href="education.html">
+<button class="button2">Education</button>
+</a>
+
+<a href="work.html">
+<button class="button3">Work</button>
+</a>
+
+<a href="myhobbies.html">
+<button class="button4">Hobbies</button>
+</a>
+
 </div>
 
-<div class="topnav">
-  <a href="myhobbies.html">My Hobbies</a>
-  <a href="https://flexboxfroggy.com/">Game Corner</a>
- <a href="contact.html" style="float:right">Contact Me</a>
-</div>
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2 class="rcorners1">OBJECTIVE</h2>
-
-      <!--<h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p> -->
-      <p>Seeking a challenging career to improve and expand my knowledge, to employ my own ideas, and to work with dedication and punctuality where I can maximize my Computer Engineering management skills and work/training experiences.</p>
-<br>
-  <hr />
-<br>
-      <h2 class="rcorners1">EDUCATIONAL BACKGROUND</h2>
-      <!--<h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p> -->
-  <ul>
-    <li>Diploma in Computer Engineering Management Technology - Polytechnic University of the Philippines (2010-2013)</li>
-    <li>Bachelor of Science in Computer Science - St. Clare College of Caloocan (2022-present)</li>
-  </ul>
-
-    </div>
-    <div class="card">
-      <h2 class="rcorners1">WORK/TRAINING EXPERIENCE</h2>
-   
-  <ul>
-        <li>
-      <h4>Freelance Junior Analyst - Avanan, Inc. </h4>
-      <p>August 2020 - February 2021</p>
-      <ul>
-        <li>Responsible for reviewing thousand of emails on a daily basis and label each.</li>
-      </ul>
-    </li>
-    <li>
-      <h4>Customer Support - Domain Merchandising Services, Inc. </h4>
-      <p>June 2013 - July 2020</p>
-      <ul>
-        <li>Responsible for ensuring that customer inquiries and issues are resolved at first point of contact (phone calls, live support chats, emails), unless system administrator knowledge/task or further investigation is required. Doing this by isolation and taking decisions within established procedures and questioning for each inquiry.</li>
-
-      </ul>
-    </li>
-
-
-
-        <li>
-      <h4>M.I.P. PC & Laptops Parts and Services</h4>
-      <p>2011-2012 (Summer OJT - 300 hrs)</p>
-      <ul>
-        <li>Technical/Technician Assistant</li>
-      </ul>
-    </li>
-  </ul>
-    <hr />
-
-
-  <h2 class="rcorners1">ELIGIBILITY</h2>
-  <ul>
-    <li>Civil Service Passer 2016 – Professional Level</li>
-  </ul>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2 class="rcorners1">ABOUT ME</h2>
-  <img src="ameropic.jpg" alt="profile image of Meri Rose Abigayle A. Tactaquin" height="150">
-      <p>Your anime lover, gamer, small but terrible old classmate</p>
-    </div>
-
-    <div class="card">
-      <h2 class="rcorners1">SKILLS AND QUALIFICATIONS</h2>
-  <ul>
-    <li>Knowledgeable of the following Software Tools:</li>
-    <ul>
-      <li>Microsoft Office (Outlook, Excel, PowerPoint, Word)</li>
-      <li>Mail Clients (Thunderbird, Mac Mail, First Class, Roundcube)</li>
-          </ul>
-    <li>Computer Literate</li>
-    <ul>
-      <li>Basic Software/Hardware failure troubleshooting</li>
-      <li>Good typing speed (45 – 60 WPM)</li>
-    </ul>
-    <li>Knowledge in domain, dns, and webhosting.</li>
-    <li>Can work with less supervision.</li>
-     <li>Dependable, hard working, trustworthy and fast learner.</li>
-     <li>Able to work well both independently and as a team.</li>
-</ul>
-    </div>
-    <div class="card">
-      <h3>Like or Follow Me!</h3>
-  <a href="https://www.linkedin.com/in/meri-rose-abigayle-tactaquin-700bb0289?authuser=0">
-<i class="bx bxl-linkedin bx-md bx-tada"></i>
-</a>
-  <a href="https://github.com/mratactaquin?authuser=0">
-<i class="bx bxl-github bx-md bx-tada" ></i>
-</a>
-  <a href="https://www.facebook.com/mra.tactaquin/">
-<i class="bx bxl-facebook bx-md bx-tada" ></i>
-</a>
-  <a href="https://www.tiktok.com/@amero6466">
-<i class="bx bxl-tiktok bx-md bx-tada" ></i>
-</a>
-
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-            <div class="container">
-                <div class="copyright">
+<h6 class="footer">
+                <h6 class="copyright">
                     &copy;
-2023, Designed and coded by AMERO.
-                </div>
-            </div>
-</div>
+2023, Designed and coded by AMERO. All rights reserved.
+                </p>
+            </p>
+
+
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+
+
 
 </body>
+</head>
 </html>
-
-
